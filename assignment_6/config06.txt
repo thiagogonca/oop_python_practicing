@@ -1,3 +1,3 @@
-voce = gay
-banana = abacate
+test_left = test_right
+test_left_r2 = test_right_r2
 oi=3

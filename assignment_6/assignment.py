@@ -50,5 +50,5 @@ class ConfigDict(dict,ConfigFile):
 
 
 cc = ConfigDict('config06.txt')
-cc['oi'] = 3
-print(cc['oisg'])
+cc['new_key'] = 'any_value'
+print(cc['not_existing_key'])
