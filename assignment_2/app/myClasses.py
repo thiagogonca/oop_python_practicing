@@ -8,15 +8,15 @@ class write_file(object):
 
     @abc.abstractclassmethod
     def write(self):
-        return
+        pass
 
     def __init__(self,filename):
         self.filename = filename
     
     def write_line(self, text):
-        f = open(os.path.join('files', self.filename), 'a')
-        f.write(text+'\n')
-        f.close()
+        # with / as -> internally calls the close() method
+        with open(os.path.join('..','files', self.filename), 'a') as f:
+            f.write(text+'\n')
 
 class delimeter_file(write_file):
 

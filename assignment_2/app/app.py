@@ -9,4 +9,7 @@ log.write('Now registering another new random log message')
 csv.write(['a','b','c','d'])
 csv.write(['1','2','3','4'])
 
-print(csv.delim)
+import os
+with open(os.path.join('..','files', 'log.txt'), 'r') as f:
+    for l in f:
+        print(l, end='')

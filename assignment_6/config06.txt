@@ -1,0 +1,3 @@
+voce = gay
+banana = abacate
+oi=3
